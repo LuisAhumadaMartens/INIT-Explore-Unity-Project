@@ -14,6 +14,6 @@ public class CoinPickup : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         coinCounter.AddCoin();
-        Destroy(gameObject);
+        Destroy(other.gameObject);
     }
 }
